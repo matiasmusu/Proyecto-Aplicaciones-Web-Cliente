@@ -1,8 +1,8 @@
 :root {
-    --primary-color:#3498db;
-    --secondary-color: #2ecc71;
-    --third-color: #1dc6bb;
-    --fourth-color: #a4c61c;
+    --primary-color: #003366;
+    --secondary-color: #0047AB;
+    --third-color: #0055A4;
+    --fourth-color: #4682B4;
     --font-color: #333;
 
     background-color: #f0f0f0;
@@ -22,6 +22,7 @@
     margin-left: 20px;
     border: 5px green solid;
     padding: 10px 20px 30px 60px;
+    width: 250px;
 }
 
 .fondo-celeste {
@@ -51,4 +52,57 @@
 .nav-logo {
     width: 40px;
     margin: 20px;
-}   
+}
+
+aside {
+    width: 250px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    min-height: 80vh;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.product-item {
+    background-color: rgb(219, 217, 217);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-color: rgb(185, 183, 183); }
+    50% { background-color: rgb(150, 150, 150); }
+    100% { background-color: rgb(158, 157, 157); }
+}
+
+.product-item:hover {
+    background-color: rgb(85, 83, 83);
+    animation: backgroundAnimation 1s ease;
+}
+
+footer {
+    background-color: #0a0465;
+    height: 200px;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
