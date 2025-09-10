@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/styles.css">
-        <title>Mi Página Web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Mi Página Web</title>
 </head>
 <body>
     <header class="nav-header">
         <div class="nav-bounds">
             <div class="nav-logo">
-                <img src="https://659c01f63e.cbaul-cdnwnd.com/5c2f1f5668ed04a761ee8ab521dda513/200000011-dd6c2dd6c4/pxfuel.jpeg?ph=659c01f63e" alt="logo" width="500px">
+                <img src="https://659c01f63e.cbaul-cdnwnd.com/5c2f1f5668ed04a761ee8ab521dda513/200000011-dd6c2dd6c4/pxfuel.jpeg?ph=659c01f63e" alt="logo" width="200px">
             </div>
             <div>
                 <input type="text" placeholder="Buscar...">
@@ -25,21 +25,21 @@
             </div>
         </div>
     </header>
+    <p class="Product-Separator">Productos</p>
     <main>
-        <section>
-                <h1>Videojuegos retro</h1>
-                 <p>Bienvenido, aqui encontrara los mejores videojuegos retro.</p>
+        <section class="main-section">
+            <h1>Videojuegos retro</h1>
+            <p>Bienvenido, aqui encontrara los mejores videojuegos retro.</p>
         </section>
         <aside>
             Menu filtros
         </aside>
         <section class="product-container">
-               Productos
-               <ul>
+            <ul>
                 <div class="product-item">
                     <li>
                         <a href="./productos.html">
-                            <div class="fondo-azul">
+                            <div class="blue-background">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Nintendo-64-wController-L.jpg/960px-Nintendo-64-wController-L.jpg" alt="Producto" width="200px">
                                 <p>Nintendo 64</p>
                                 <p>Precio: $120</p>
@@ -51,7 +51,7 @@
                 <div class="product-item">
                     <li>
                         <a href="elemento 2">
-                            <div class="fondo-verde">
+                            <div class="blue-background">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Sega-Mega-Drive-JP-Mk1-Console-Set.jpg" alt="Producto" width="200px">
                                 <p>Sega Genesis</p>
                                 <p>Precio: $90</p>
@@ -60,77 +60,91 @@
                         </a>
                     </li>
                 </div>
-                <li>
-                    <a href="elemento 3">
-                        <div class="fondo-celeste">
-                            <img src="https://http2.mlstatic.com/D_NQ_NP_713089-MLA89738558315_082025-O.webp" alt="Producto" width="200px">
-                            <p>Super Mario 64 (cartucho)</p>
-                            <p>Precio: $35</p>
-                            <button>Añadir al carrito</button>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="elemento 4">
-                        <div class="fondo-amarillo">
-                            <img src="https://m.media-amazon.com/images/I/61I2uQ3ittL.jpg" alt="Producto" width="200px">
-                            <p>The Legend of Zelda: Ocarina of Time (cartucho)</p>
-                            <p>Precio: $40</p>
-                            <button>Añadir al carrito</button>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="elemento 5">
-                        <div class="fondo-azul">
-                            <img src="https://tienda.starware.com.ar/wp-content/uploads/2024/08/gamepad-joystick-generico-retro-snes-usb-1321-1845.jpg" alt="Producto" width="200px">
-                            <p>Joystick Retro USB</p>
-                            <p>Precio: $20</p>
-                            <button>Añadir al carrito</button>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="elemento 6">
-                        <div class="fondo-azul">
-                            <img src="./html.png" alt="Producto" width="200px">
-                            <p>Playstation 1</p>
-                            <p>Precio: $80</p>
-                            <button>Añadir al carrito</button>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="elemento 7">
-                        <div class="fondo-azul">
-                            <img src="./html.png" alt="Producto" width="200px">
-                            <p>Game Boy Color</p>
-                            <p>Precio: $60</p>
-                            <button>Añadir al carrito</button>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="elemento 8">
-                        <div class="fondo-azul">
-                            <img src="./html.png" alt="Producto" width="200px">
-                            <p>Donkey Kong Country (SNES)</p>
-                            <p>Precio: $30</p>
-                            <button>Añadir al carrito</button>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="elemento 9">
-                        <div class="fondo-azul">
-                            <img src="./html.png" alt="Producto" width="200px">
-                            <p>Volante Retro para juegos de carreras</p>
-                            <p>Precio: $25</p>
-                            <button>Añadir al carrito</button>
-                        </div>
-                    </a>
-                </li>
-               </ul>
+                <div class="product-item">
+                    <li>
+                        <a href="elemento 3">
+                            <div class="blue-background">
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_713089-MLA89738558315_082025-O.webp" alt="Producto" width="200px">
+                                <p>Super Mario 64 (cartucho)</p>
+                                <p>Precio: $35</p>
+                                <button>Añadir al carrito</button>
+                            </div>
+                        </a>
+                    </li>
+                </div>
+                <div class="product-item">
+                    <li>
+                        <a href="elemento 4">
+                            <div class="blue-background">
+                                <img src="https://m.media-amazon.com/images/I/61I2uQ3ittL.jpg" alt="Producto" width="200px">
+                                <p>The Legend of Zelda: Ocarina of Time (cartucho)</p>
+                                <p>Precio: $40</p>
+                                <button>Añadir al carrito</button>
+                            </div>
+                        </a>
+                    </li>
+                </div>
+                <div class="product-item">
+                    <li>
+                        <a href="elemento 5">
+                            <div class="blue-background">
+                                <img src="https://tienda.starware.com.ar/wp-content/uploads/2024/08/gamepad-joystick-generico-retro-snes-usb-1321-1845.jpg" alt="Producto" width="200px">
+                                <p>Joystick Retro USB</p>
+                                <p>Precio: $20</p>
+                                <button>Añadir al carrito</button>
+                            </div>
+                        </a>
+                    </li>
+                </div>
+                <div class="product-item">
+                    <li>
+                        <a href="elemento 6">
+                            <div class="blue-background">
+                                <img src="https://i0.wp.com/elplanetaurbano.com/wp-content/uploads/2024/12/Playstatio-30-anos-Planeta-Urbano-2024-1.jpg?w=1200&ssl=1" alt="Producto" width="200px">
+                                <p>Playstation 1</p>
+                                <p>Precio: $80</p>
+                                <button>Añadir al carrito</button>
+                            </div>
+                        </a>
+                    </li>
+                </div>
+                <div class="product-item">
+                    <li>
+                        <a href="elemento 7">
+                            <div class="blue-background">
+                                <img src="https://http2.mlstatic.com/D_664470-MLA91448966183_092025-O.jpg" alt="Producto" width="200px">
+                                <p>Game Boy Color</p>
+                                <p>Precio: $60</p>
+                                <button>Añadir al carrito</button>
+                            </div>
+                        </a>
+                    </li>
+                </div>
+                <div class="product-item">
+                    <li>
+                        <a href="elemento 8">
+                            <div class="blue-background">
+                                <img src="https://romsfun.com/wp-content/uploads/2019/07/Donkey-Kong-Country.jpg" alt="Producto" width="200px">
+                                <p>Donkey Kong Country (SNES)</p>
+                                <p>Precio: $30</p>
+                                <button>Añadir al carrito</button>
+                            </div>
+                        </a>
+                    </li>
+                </div>
+                <div class="product-item">
+                    <li>
+                        <a href="elemento 9">
+                            <div class="blue-background">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmOeql0thpc2RUdJaE6Aw1beCT6f4Jy8dstQ&s" alt="Producto" width="200px">
+                                <p>Volante Retro para juegos de carreras</p>
+                                <p>Precio: $25</p>
+                                <button>Añadir al carrito</button>
+                            </div>
+                        </a>
+                    </li>
+                </div>
+            </ul>
         </section>
     </main>
     <footer>
