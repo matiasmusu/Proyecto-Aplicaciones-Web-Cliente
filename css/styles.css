@@ -18,6 +18,16 @@
     color: white;
 }
 
+
+.blue-background-product {
+    background-color: var(--secondary-color);
+    margin-left: 20px;
+    border: 5px var(--third-color) solid;
+    padding: 10px 20px 30px 60px;
+    width: 650px;
+    color: white;
+}
+
 .nav-header {
     height: 100px;
     display: flex;
