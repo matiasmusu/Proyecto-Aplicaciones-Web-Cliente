@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Panel de Administración</title>
+</head>
+<body>
+<header class="nav-header">
+    <div class="nav-bounds">
+        <div class="nav-logo">
+            <img src="https://659c01f63e.cbaul-cdnwnd.com/5c2f1f5668ed04a761ee8ab521dda513/200000011-dd6c2dd6c4/pxfuel.jpeg?ph=659c01f63e" 
+                 alt="Logo" width="200">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="admin-main">
+    <h1>Panel de Administración</h1>
+
+    <section class="admin-products">
+        <h2>Listado de productos</h2>
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Categoría</th>
+                    <th>Estado</th>
+                    <th>Stock</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="admin-tbody">
+            </tbody>
+        </table>
+    </section>
+
+    <section class="admin-form-section">
+        <h2 id="admin-form-title">Crear producto</h2>
+
+        <form id="admin-form" class="admin-form">
+            <input type="hidden" id="prod-id">
+
+            <label>
+                Nombre:
+                <input type="text" id="prod-nombre" required>
+            </label>
+
+            <label>
+                Precio:
+                <input type="number" id="prod-precio" required>
+            </label>
+
+            <label>
+                Categoría:
+                <select id="prod-categoria" required>
+                    <option value="">Seleccionar</option>
+                    <option value="consolas">Consolas</option>
+                    <option value="juegos">Juegos</option>
+                    <option value="accesorios">Accesorios</option>
+                </select>
+            </label>
+
+            <label>
+                Estado:
+                <select id="prod-estado" required>
+                    <option value="">Seleccionar</option>
+                    <option value="nuevo">Nuevo</option>
+                    <option value="usado">Usado</option>
+                </select>
+            </label>
+
+            <label>
+                Stock:
+                <input type="number" id="prod-stock" required>
+            </label>
+
+            <label>
+                URL Imagen:
+                <input type="text" id="prod-imagen" required>
+            </label>
+
+            <label>
+                Descripción:
+                <textarea id="prod-descripcion" rows="3"></textarea>
+            </label>
+
+            <div class="admin-form-buttons">
+                <button type="submit" class="hero-button">Guardar</button>
+                <button type="button" id="admin-cancelar" class="reset-button">Cancelar</button>
+            </div>
+        </form>
+
+        <p id="admin-msg"></p>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Sobre Nosotros</h4>
+            <p>Tu tienda de confianza para videojuegos retro desde 2025. Revivimos la era dorada del gaming.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Enlaces Rápidos</h4>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#faq">Preguntas Frecuentes</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Contacto</h4>
+            <p>📧 info@videojuegosretro.com</p>
+            <p>📱 +54 11 1234-5678</p>
+            <p>📍 Buenos Aires, Argentina</p>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Síguenos</h4>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2025 Videojuegos Retro. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script type="module" src="./js/admin.js"></script>
+</body>
+</html>

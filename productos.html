@@ -4,25 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Nintendo 64 - Detalle del Producto</title>
+    <title>Detalle del Producto</title>
 </head>
 <body>
     <header class="nav-header">
         <div class="nav-bounds">
             <div class="nav-logo">
                 <img src="https://659c01f63e.cbaul-cdnwnd.com/5c2f1f5668ed04a761ee8ab521dda513/200000011-dd6c2dd6c4/pxfuel.jpeg?ph=659c01f63e" 
-                     alt="Logo Videojuegos Retro" 
-                     width="200px">
+                alt="Logo Videojuegos Retro" 
+                width="200px">
             </div>
             <div>
-                <input type="text" placeholder="Buscar...">
+                <input id="search" type="text" placeholder="Buscar...">
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="index.html#productos">Productos</a></li>
-                    <li><a href="#">Carrito</a></li>
-                    <li><a href="#">Ayuda</a></li>
+                    <li><a href="carrito.html">Carrito</a></li>
                 </ul>
             </nav>
         </div>
@@ -30,34 +29,21 @@
 
     <main class="product-detail-main">
         <a href="index.html" class="back-link">← Volver a la tienda</a>
-        
+
         <article class="product-detail">
             <div class="product-detail-image">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Nintendo-64-wController-L.jpg/960px-Nintendo-64-wController-L.jpg" 
-                     alt="Nintendo 64">
+                <img id="prod-img" src="" alt="">
             </div>
-            
+
             <div class="product-detail-info">
-                <h1>Nintendo 64</h1>
-                <p class="product-detail-price">$120</p>
-                
-                <p class="product-description">
-                    La Nintendo 64 es una consola de videojuegos de sexta generación desarrollada y comercializada por Nintendo. 
-                    Fue lanzada en 1996 y es conocida por su innovador diseño de control y su capacidad para renderizar gráficos en 3D.
-                </p>
-                
-                <h2>Características:</h2>
-                <ul class="product-features">
-                    <li>Procesador: CPU de 64 bits</li>
-                    <li>Memoria: 4 MB de RAM (expandible a 8 MB con el Expansion Pak)</li>
-                    <li>Gráficos: Capacidad para gráficos en 3D con texturas y efectos avanzados</li>
-                    <li>Controles: Controlador con joystick analógico y botones adicionales para una experiencia de juego mejorada</li>
-                    <li>Juegos populares: Super Mario 64, The Legend of Zelda: Ocarina of Time, GoldenEye 007, Mario Kart 64, entre otros</li>
-                </ul>
-                
-                <p class="product-stock">Stock disponible: 5 unidades</p>
-                
-                <button class="add-to-cart-button">Añadir al carrito</button>
+                <h1 id="prod-nombre"></h1>
+                <p class="product-detail-price" id="prod-precio"></p>
+                <p class="product-description" id="prod-descripcion"></p>
+                <p class="product-stock" id="prod-stock"></p>
+
+                <button class="add-to-cart-button" id="btn-cart">
+                    Añadir al carrito
+                </button>
             </div>
         </article>
     </main>
@@ -100,5 +86,7 @@
             <p>&copy; 2025 Videojuegos Retro. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script type="module" src="./js/detail.js"></script>
 </body>
 </html>
